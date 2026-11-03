@@ -2,8 +2,7 @@ name: Build APK Termux Indonesia
 
 on:
   push:
-    branches:
-      - master
+    branches: [master]
   workflow_dispatch:
 
 permissions:
@@ -25,14 +24,16 @@ jobs:
 
       - name: Siapkan Android SDK
         uses: android-actions/setup-android@v3
+        with:
+          packages: ''
 
       - name: Pasang komponen Android
         run: |
-          sdkmanager --install \
-            "platform-tools" \
-            "platforms;android-36" \
-            "build-tools;36.0.0" \
-            "ndk;29.0.14206865"
+          yes | sdkmanager --licenses
+          sdkmanager --install "platform-tools"
+          sdkmanager --install "platforms;android-36"
+          sdkmanager --install "build-tools;36.0.0"
+          sdkmanager --install "ndk;29.0.14206865"
 
       - name: Berikan izin Gradle
         run: chmod +x gradlew
