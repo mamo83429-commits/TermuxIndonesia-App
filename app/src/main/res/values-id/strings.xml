@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="application_name">Termux Indonesia</string>
+    <string name="shared_user_label">pengguna Termux Indonesia</string>
+
+    <string name="permission_run_command_label">Jalankan perintah di lingkungan Termux Indonesia</string>
+    <string name="permission_run_command_description">Menjalankan perintah di lingkungan Termux Indonesia dan mengakses berkas</string>
+
+    <string name="bootstrap_installer_body">Memasang paket dasar…</string>
+    <string name="bootstrap_error_title">Tidak dapat memasang sistem dasar</string>
+    <string name="bootstrap_error_body">Termux Indonesia tidak dapat memasang paket dasar.</string>
+    <string name="bootstrap_error_abort">Batalkan</string>
+    <string name="bootstrap_error_try_again">Coba lagi</string>
+    <string name="bootstrap_error_not_primary_user_message">Termux Indonesia hanya dapat dijalankan sebagai pengguna utama.\nBerkas sistem dasar memiliki lokasi $PREFIX tetap dan tidak dapat dipasang di lokasi lain selain:\n%1$s.</string>
+    <string name="bootstrap_error_installed_on_portable_sd">Termux Indonesia tidak dapat dipasang pada kartu SD portabel atau penyimpanan eksternal.\nBerkas sistem dasar memiliki lokasi $PREFIX tetap dan tidak dapat dipasang di lokasi lain selain:\n%1$s.</string>
+
+    <string name="action_new_session">Sesi baru</string>
+    <string name="action_new_session_failsafe">Mode pemulihan</string>
+    <string name="title_max_terminals_reached">Batas terminal tercapai</string>
+    <string name="msg_max_terminals_reached">Tutup sesi yang sudah ada sebelum membuat sesi baru.</string>
+    <string name="title_rename_session">Ubah nama sesi</string>
+    <string name="action_rename_session_confirm">Simpan</string>
+    <string name="title_create_named_session">Buat sesi bernama</string>
+    <string name="action_create_named_session_confirm">Buat</string>
+    <string name="action_toggle_soft_keyboard">Papan ketik</string>
+    <string name="msg_enabling_terminal_toolbar">Mengaktifkan bilah alat terminal</string>
+    <string name="msg_disabling_terminal_toolbar">Menonaktifkan bilah alat terminal</string>
+
+    <string name="action_select_url">Pilih alamat</string>
+    <string name="title_select_url_dialog">Ketuk alamat untuk menyalin atau tekan lama untuk membukanya</string>
+    <string name="title_select_url_none_found">Tidak ditemukan alamat di terminal.</string>
+    <string name="msg_select_url_copied_to_clipboard">Alamat berhasil disalin</string>
+    <string name="action_share_transcript">Bagikan riwayat terminal</string>
+    <string name="title_share_transcript">Riwayat terminal</string>
+    <string name="title_share_transcript_with">Kirim riwayat kepada:</string>
+    <string name="action_share_selected_text">Bagikan teks terpilih</string>
+    <string name="title_share_selected_text">Teks terminal</string>
+    <string name="title_share_selected_text_with">Kirim teks terpilih kepada:</string>
+    <string name="action_autofill_username">Isi nama pengguna otomatis</string>
+    <string name="action_autofill_password">Isi kata sandi otomatis</string>
+    <string name="action_reset_terminal">Atur ulang</string>
+    <string name="msg_terminal_reset">Terminal berhasil diatur ulang</string>
+    <string name="action_kill_process">Hentikan proses (%d)</string>
+    <string name="title_confirm_kill_process">Yakin ingin menghentikan sesi ini?</string>
+    <string name="action_style_terminal">Tampilan</string>
+    <string name="action_toggle_keep_screen_on">Jaga layar tetap menyala</string>
+    <string name="action_open_help">Bantuan</string>
+    <string name="action_open_settings">Pengaturan</string>
+    <string name="action_report_issue">Laporkan masalah</string>
+    <string name="msg_generating_report">Sedang membuat laporan</string>
+    <string name="msg_add_termux_debug_info">Tambahkan informasi pemeriksaan Termux ke laporan?</string>
+    <string name="error_styling_not_installed">Aplikasi tambahan Termux Styling belum terpasang.</string>
+    <string name="action_styling_install">Pasang</string>
+
+    <string name="notification_action_exit">Keluar</string>
+    <string name="notification_action_wake_lock">Aktifkan pengunci daya</string>
+    <string name="notification_action_wake_unlock">Lepaskan pengunci daya</string>
+
+    <string name="error_display_over_other_apps_permission_not_granted_to_start_terminal">Termux Indonesia memerlukan izin \"Tampilkan di atas aplikasi lain\" untuk memulai sesi terminal dari latar belakang pada Android 10 atau lebih baru. Berikan izin melalui Pengaturan → Aplikasi → Termux Indonesia → Lanjutan.</string>
+    <string name="error_termux_service_invalid_execution_command_runner">Pelaksana perintah untuk TermuxService tidak valid: `%1$s`</string>
+    <string name="error_termux_service_unsupported_execution_command_runner">Pelaksana perintah untuk TermuxService tidak didukung: `%1$s`</string>
+    <string name="error_termux_service_unsupported_execution_command_shell_create_mode">Mode pembuatan shell untuk TermuxService tidak didukung: `%1$s`</string>
+    <string name="error_termux_service_execution_command_shell_name_unset">Nama shell belum ditentukan, tetapi mode pembuatan shell `%1$s` digunakan.</string>
+
+    <string name="error_run_command_service_invalid_intent_action">Tindakan intent untuk RunCommandService tidak valid: `%1$s`</string>
+    <string name="error_run_command_service_invalid_execution_command_runner">Pelaksana perintah untuk RunCommandService tidak valid: `%1$s`</string>
+    <string name="error_run_command_service_mandatory_extra_missing">Data tambahan wajib tidak ditemukan: \"%1$s\"</string>
+    <string name="error_run_command_service_api_help">Kunjungi %1$s untuk informasi lebih lanjut tentang penggunaan intent RUN_COMMAND.</string>
+
+    <string name="title_file_received">Simpan berkas di ~/downloads/</string>
+    <string name="action_file_received_edit">Sunting</string>
+    <string name="action_file_received_open_directory">Buka folder</string>
+
+    <string name="error_termux_service_start_failed_general">Gagal menjalankan TermuxService. Periksa logcat untuk mengetahui penyebabnya.</string>
+    <string name="error_termux_service_start_failed_bg">Gagal menjalankan TermuxService di latar belakang karena pembatasan Android.</string>
+
+    <string name="title_activity_termux_settings">Pengaturan Termux Indonesia</string>
+    <string name="termux_preferences_title">Termux Indonesia</string>
+    <string name="termux_preferences_summary">Pengaturan aplikasi Termux Indonesia</string>
+
+    <string name="termux_debugging_preferences_title">Pemeriksaan sistem</string>
+    <string name="termux_debugging_preferences_summary">Pengaturan pemeriksaan dan pencatatan sistem</string>
+    <string name="termux_logging_header">Pencatatan aktivitas</string>
+    <string name="termux_log_level_title">Tingkat pencatatan</string>
+
+    <string name="termux_terminal_view_key_logging_enabled_title">Pencatatan tombol terminal</string>
+    <string name="termux_terminal_view_key_logging_enabled_off">Pencatatan tombol terminal dinonaktifkan. (Bawaan)</string>
+    <string name="termux_terminal_view_key_logging_enabled_on">Logcat akan mencatat tombol terminal. Pencatatan ini menghasilkan banyak data dan sebaiknya dinonaktifkan dalam penggunaan normal agar tidak mengganggu kinerja.</string>
+
+    <string name="termux_plugin_error_notifications_enabled_title">Pemberitahuan kesalahan plugin</string>
+    <string name="termux_plugin_error_notifications_enabled_off">Nonaktifkan pesan dan pemberitahuan kesalahan plugin.</string>
+    <string name="termux_plugin_error_notifications_enabled_on">Tampilkan pesan dan pemberitahuan kesalahan plugin. (Bawaan)</string>
+
+    <string name="termux_crash_report_notifications_enabled_title">Pemberitahuan laporan kerusakan</string>
+    <string name="termux_crash_report_notifications_enabled_off">Nonaktifkan pemberitahuan laporan kerusakan.</string>
+    <string name="termux_crash_report_notifications_enabled_on">Tampilkan pemberitahuan laporan kerusakan. (Bawaan)</string>
+
+    <string name="termux_terminal_io_preferences_title">Masukan dan keluaran terminal</string>
+    <string name="termux_terminal_io_preferences_summary">Pengaturan masukan dan keluaran terminal</string>
+    <string name="termux_keyboard_header">Papan ketik</string>
+    <string name="termux_soft_keyboard_enabled_title">Aktifkan papan ketik layar</string>
+    <string name="termux_soft_keyboard_enabled_off">Papan ketik layar akan dinonaktifkan.</string>
+    <string name="termux_soft_keyboard_enabled_on">Papan ketik layar akan diaktifkan. (Bawaan)</string>
+
+    <string name="termux_soft_keyboard_enabled_only_if_no_hardware_title">Papan ketik layar hanya jika tidak ada papan ketik fisik</string>
+    <string name="termux_soft_keyboard_enabled_only_if_no_hardware_off">Papan ketik layar tetap aktif meskipun papan ketik fisik terhubung. (Bawaan)</string>
+    <string name="termux_soft_keyboard_enabled_only_if_no_hardware_on">Papan ketik layar hanya aktif jika tidak ada papan ketik fisik yang terhubung.</string>
+
+    <string name="termux_terminal_view_preferences_title">Tampilan terminal</string>
+    <string name="termux_terminal_view_preferences_summary">Pengaturan tampilan terminal</string>
+    <string name="termux_terminal_view_view_header">Tampilan</string>
+    <string name="termux_terminal_view_terminal_margin_adjustment_title">Penyesuaian batas terminal</string>
+    <string name="termux_terminal_view_terminal_margin_adjustment_off">Penyesuaian batas terminal dinonaktifkan.</string>
+    <string name="termux_terminal_view_terminal_margin_adjustment_on">Penyesuaian batas terminal diaktifkan. Fitur ini dapat membantu memperbaiki masalah ketika papan ketik menutupi sebagian tombol tambahan atau tampilan terminal. Jika layar berkedip pada perangkatmu, nonaktifkan fitur ini. (Bawaan)</string>
+
+    <string name="termux_api_preferences_title">Termux:API</string>
+    <string name="termux_api_preferences_summary">Pengaturan aplikasi Termux:API</string>
+    <string name="termux_float_preferences_title">Termux:Float</string>
+    <string name="termux_float_preferences_summary">Pengaturan aplikasi Termux:Float</string>
+    <string name="termux_tasker_preferences_title">Termux:Tasker</string>
+    <string name="termux_tasker_preferences_summary">Pengaturan aplikasi Termux:Tasker</string>
+    <string name="termux_widget_preferences_title">Termux:Widget</string>
+    <string name="termux_widget_preferences_summary">Pengaturan aplikasi Termux:Widget</string>
+
+    <string name="about_preference_title">Tentang aplikasi</string>
+    <string name="donate_preference_title">Donasi</string>
+
+</resources>
